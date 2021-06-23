@@ -1,9 +1,7 @@
 {% extends 'base.html' %}
-
-    
     {% block content %}
     <div class="col-4 offset-4">
-        <h4> Create a Todo </h4>
+        <h4> Update Todo </h4>
         <form method="post">
             {% csrf_token %}
             {{form.as_p}}
@@ -12,3 +10,4 @@
         </form>
     </div>
     {% endblock content %}
+    
